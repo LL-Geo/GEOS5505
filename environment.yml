@@ -2,8 +2,8 @@ name: example-environment
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - numpy=1.23.5
+  - python=3.10
+  - numpy=1.19
   - psutil
   - toolz
   - matplotlib
