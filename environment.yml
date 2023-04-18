@@ -12,4 +12,3 @@ dependencies:
   - partd
   - bokeh
   - ipympl
-  - pyvista
