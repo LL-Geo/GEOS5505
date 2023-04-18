@@ -1,31 +1,18 @@
-# Conda environment with environment.yml
+# Exercise material for GEOS5505 Multiscale Tectonic Systems
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/conda_environment/HEAD?filepath=index.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LL-Geo/GEOS5505/HEAD)
 
-A Binder-compatible repo with an `environment.yml` file.
+This repository contains exercises for understanding potential field data.
 
-Access this Binder by clicking the blue badge above or at the following URL:
+Exercises include:
 
-http://mybinder.org/v2/gh/binder-examples/conda_environment/HEAD?filepath=index.ipynb
+1. 2D interactive gravity forward calculation
+2. 2D interactive magnetic forward calculation
+3. Calculating gravity and magnetic response for a geological model using pynoddy
 
-## Notes
-The `environment.yml` file should list all Python libraries on which your notebooks
-depend, specified as though they were created using the following `conda` commands:
+## Acknowledgements
+Source code for calculating 2D magnetic body: https://github.com/inverseproblem/pyMag2DPoly
 
-```
-conda activate example-environment
-conda env export --from-history -f environment.yml
-```
+Source code for calculating 2D gravity body is adapted from: https://gitlab.com/JuliaGeoph/MagGrav2Dpoly.jl
 
-Note that the only libraries available to you will be the ones specified in
-the `environment.yml`, so be sure to include everything that you need! 
-
-Also note that if you skip the `--from-history`, conda may include OS-specific
-packages in `environment.yml`, which you would have to manually prune from
-`environment.yml`.  For example, confirmed macOS-specific packages that should
-be removed are:
-
-* libcxxabi=4.0.1
-* appnope=0.1.0
-* libgfortran=3.0.1
-* libcxx=4.0.1
+Source code for pynoddy: https://github.com/cgre-aachen/pynoddy
